@@ -1,5 +1,5 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { streamText, ModelMessage } from "ai";
+import { streamText, Message } from "ai";
 import { systemPrompt } from "./prompt";
 
 const google = createGoogleGenerativeAI({
