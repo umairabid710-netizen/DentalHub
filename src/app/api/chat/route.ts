@@ -1,5 +1,5 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { streamText, Message } from "ai";
+import { streamText } from "ai";
 import { systemPrompt } from "./prompt";
 
 const google = createGoogleGenerativeAI({
@@ -10,13 +10,11 @@ export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
 
-    // Map messages payload to typed messages array
-    const chatMessages: ModelMessage[] = messages;
-
+    // Pass messages directly to streamText to avoid TypeScript missing type errors
     const result = streamText({
       model: google("gemini-3.5-flash"),
       system: systemPrompt,
-      messages: chatMessages,
+      messages,
     });
 
     return result.toDataStreamResponse();
