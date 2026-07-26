@@ -6,7 +6,7 @@ Welcome to **DentalHub**, a premium, production-grade clinical web application d
 
 ## 🚀 Live URL & Repository
 
-- **Live Staging URL**: [https://DentalHub-clinic-demo.vercel.app](https://dentalhub-clinic-demo.vercel.app) *(Placeholder)*
+- **Live Staging URL**: [https://dental-hub-chi.vercel.app](https://dentalhub-clinic-demo.vercel.app) *(Placeholder)*
 - **GitHub Repository**: [https://github.com/umairabid710-netizen/DentalHub](https://github.com/username/dentalhub) *(Placeholder)*
 
 ---
